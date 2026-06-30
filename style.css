@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+/* Navbar */
+
+.navbar{
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+font-size:28px;
+}
+
+.nav-link{
+font-weight:500;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#ffc107 !important;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+padding:80px 0;
+color:white;
+}
+
+.hero h1{
+font-size:55px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero-img{
+width:100%;
+max-width:500px;
+animation:float 3s infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Search */
+
+.input-group{
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+border-radius:10px;
+overflow:hidden;
+}
+
+/* Products */
+
+.card{
+border:none;
+border-radius:15px;
+transition:.4s;
+overflow:hidden;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.card img{
+height:220px;
+object-fit:cover;
+transition:.4s;
+}
+
+.card:hover img{
+transform:scale(1.08);
+}
+
+.card-body{
+text-align:center;
+}
+
+.card h5{
+font-weight:600;
+}
+
+.card p{
+font-size:22px;
+font-weight:bold;
+color:#198754;
+}
+
+.btn-warning{
+font-weight:600;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn-warning:hover{
+transform:scale(1.05);
+}
+
+/* Features */
+
+#features{
+background:white;
+}
+
+#features i{
+transition:.3s;
+}
+
+#features i:hover{
+transform:rotate(10deg) scale(1.2);
+}
+
+/* Contact */
+
+form{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.form-control{
+padding:15px;
+}
+
+.form-control:focus{
+box-shadow:none;
+border:2px solid #ffc107;
+}
+
+/* Footer */
+
+footer{
+margin-top:40px;
+font-size:17px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero-img{
+margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:32px;
+}
+
+.card{
+margin-bottom:25px;
+}
+
+}
+.hero-img{
+    width:100%;
+    max-width:500px;
+    height:400px;
+    object-fit:contain;
+}
+
+.card-img-top{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    padding:15px;
+    background:#fff;
+}
